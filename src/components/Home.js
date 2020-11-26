@@ -18,6 +18,10 @@ const Home = () => {
                 <div className="button-container">
                     <button className="about-us-btn">LLAMA AHORA</button>
                 </div>
+                <div className="social-media-container">
+                    <a href=""><i class='fab fa-facebook-square social-media-icon'></i></a>
+                    <a href=""><i class='fab fa-instagram-square social-media-icon'></i></a>
+                </div>
             </section>
 
             <section className='instagram-feed'>
