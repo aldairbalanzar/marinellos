@@ -32,8 +32,8 @@ body {
   line-height: 1;
   background-image: url('./assets/salon_chairs_bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 25%;
+  background-size: 100%;
+  background-position: 0 60%;
 }
 ol, ul {
 	list-style: none;
@@ -110,6 +110,8 @@ table {
   transition: .3s;
 }
 
+
+
 /* home component */
 .home {
   width: 74%;
@@ -145,7 +147,7 @@ table {
   color: #4f4f4f;
   background-color: #fafafa;
   border-radius: 5px;
-  padding: 2% 5% 0;
+  padding: 2% 4% 0;
 }
 .about-us-title {
   width: 100%;
