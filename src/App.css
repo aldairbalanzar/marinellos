@@ -56,11 +56,12 @@ table {
 .App {
   text-align: center;
   max-width: 100%;
-  width: 100%;
+  width: 74%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
   font-family: "montserrat";
 }
 
@@ -73,19 +74,20 @@ table {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  padding: 10px 6%;
-  box-shadow: 0px 8px 6px rgba(128, 128, 128, 0.8);
+  padding: 1% 0 0;
+  box-shadow: 0px 5px 6px rgba(34, 34, 34, 0.7);
 }
 .logo-container {
   width: auto;
   text-align: left;
+  padding: 0 0 0 2%;
 }
-.header {
+.main-logo {
   color: #fafafa;
   font-size: 1.8rem;
   font-weight: 600;
 }
-.sub-header {
+.sub-logo {
   color: #fafafa;
   font-size: 1.4rem;
   text-align: center;
@@ -97,6 +99,7 @@ table {
   align-items: center;
   width: 36%;
   list-style-type: none;
+  padding: 0 2% 0 0;
 }
 .link {
   width: auto;
@@ -114,15 +117,14 @@ table {
 
 
 
+
+
 /* home component */
 .home {
-  width: 74%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: space-around;
   padding: 7% 2% 3%;
 }
 .logo {
@@ -149,7 +151,7 @@ table {
   color: #4f4f4f;
   background-color: #fafafa;
   border-radius: 5px;
-  padding: 2% 4% 0;
+  padding: 2% 4% 1%;
 }
 .about-us-title {
   width: 100%;
@@ -186,7 +188,7 @@ table {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin: 1% 0 0;
+  margin: 5% 0 0;
 }
 .social-media-icon {
   font-size: 2.4rem;
@@ -207,7 +209,7 @@ table {
 .instagram-img {
   object-fit: cover;
   width: 100%;
-  height: 364px;
+  height: 378px;
   border-radius: 5px;
 }
 
@@ -216,4 +218,41 @@ table {
 /* contact */
 .contact-section {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 12% 0 0;
 }
+.contact-title {
+  width: 100%;
+  color: #fafafa;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.cards-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 4% 6% 6%;
+}
+.salon-card {
+  width: 31%;
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+.location-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.info-container {
+  width: 100%;
+  padding: 4% 0;
+  color: #4f4f4f;
+}
+.salon-info {
+  margin: 3% 0;
+}
+

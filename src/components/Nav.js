@@ -4,8 +4,8 @@ const Nav = () => {
     return (
         <nav className='navigator'>
             <div className="logo-container">
-                <h3 className="header">Marinellos</h3>
-                <h4 className="sub-header">Beauty Salon</h4>
+                <h3 className="main-logo">Marinellos</h3>
+                <h4 className="sub-logo">Beauty Salon</h4>
             </div>
             <div className='links-container'>
                 <li className='link'>Home</li>

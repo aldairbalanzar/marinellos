@@ -1,14 +1,18 @@
-import React from 'react'
+import React from 'react';
+import temp_img from '../assets/location_1.jpg';
 
 const SalonCard = () => {
     return (
-        <div>
-            {/* <p>{name ? name : "NAME"}</p>
-            <p>{address ? address : 'LOCATION'}</p>
-            <p>{number ? number : 'NUMBER'}</p> */}
-            <p>NAME</p>
-            <p>LOCATION</p>
-            <p>NUMBER</p>
+        <div className='salon-card'>
+            <img
+            className='location-img'
+            src={temp_img}
+            alt='marinellos location'/>
+            <div className="info-container">
+                <p className='salon-info'>NAME</p>
+                <p className='salon-info'>LOCATION</p>
+                <p className='salon-info'>NUMBER</p>
+            </div>
         </div>
     )
 }
