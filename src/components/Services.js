@@ -6,8 +6,10 @@ import curly_hair from '../assets/curly_hair.jpg';
 
 const Services = () => {
     return (
-        <section className='services-section'>
-            <h1 className="services-title">SERVICIOS</h1>
+        <section className='services-section' id='services'>
+            <header className='services-header'>
+                <h1 className="services-title">SERVICIOS</h1>
+            </header>
             <div className="services-container">
                 <div className="images-container">
                     <img className='service-img' src={purple_hair} alt=""/>

@@ -151,7 +151,7 @@ table {
   color: #4f4f4f;
   background-color: #fafafa;
   border-radius: 5px;
-  padding: 2% 4% 1%;
+  padding: 2% 4% 0;
 }
 .about-us-title {
   width: 100%;
@@ -222,7 +222,10 @@ table {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 12% 0 20%;
+  padding: 10% 0 0;
+}
+.contact-header {
+  width: 100%;
 }
 .contact-title {
   width: 100%;
@@ -264,6 +267,10 @@ table {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 10% 0 2%;
+}
+.services-header {
+  width: 100%;
 }
 .services-title {
   width: 100%;
@@ -276,7 +283,7 @@ table {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 5% 6% 0;
+  padding: 4% 6% 0;
 }
 .images-container {
   width: 100%;
@@ -296,7 +303,7 @@ table {
   justify-content: space-around;
   color: #fafafa;
   font-size: 1.4rem;
-  padding: 3% 0;
+  padding: 3% 0 0;
 }
 .statement {
   width: 46%;

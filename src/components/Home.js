@@ -3,7 +3,7 @@ import wavy_hair from '../assets/wavy_hair.jpg'
 
 const Home = () => {
     return (
-        <div className='home'>
+        <main className='home' id='home'>
             <header className='logo'>
                 <h1 className='title'>Marinellos</h1>
                 <h2 className='sub-title'>Beauty Salon</h2>
@@ -31,7 +31,7 @@ const Home = () => {
                 className='instagram-img'
                 />
             </section>
-        </div>
+        </main>
     )
 }
 
