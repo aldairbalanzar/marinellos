@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-scroll';
 
 const Nav = () => {
     return (
@@ -8,10 +9,10 @@ const Nav = () => {
                 <h4 className="sub-logo">Beauty Salon</h4>
             </div>
             <div className='links-container'>
-                <li className='link'>Home</li>
-                <li className='link'>Contacto </li>
-                <li className='link'>Servicios</li>
-                <li className='link'>Galer&iacute;a</li>
+                <Link className='link' to='home' smooth={true} duration={500}>Home</Link>
+                <Link className='link' to='contact' smooth={true} duration={500}>Contacto </Link>
+                <Link className='link' to='services' smooth={true} duration={500}>Servicios</Link>
+                <Link className='link' to='gallery' smooth={true} duration={500}>Galer&iacute;a</Link>
             </div>
         </nav>
     )
