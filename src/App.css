@@ -293,7 +293,7 @@ table {
 }
 .service-img {
   width: 22%;
-  height: 248px;
+  height: 256px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -311,4 +311,27 @@ table {
 }
 .service {
   padding: 1% 0;
+}
+
+
+
+.gallery-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10% 8% 2%;
+}
+.image-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.gallery-img {
+  width: 23%;
+  object-fit: cover;
+  height: 232px;
+  margin: 2% 0 0;
+  border-radius: 5px;
 }

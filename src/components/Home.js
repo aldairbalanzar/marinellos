@@ -1,5 +1,6 @@
 import React from 'react'
 import wavy_hair from '../assets/wavy_hair.jpg'
+import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
@@ -16,7 +17,7 @@ const Home = () => {
                     <p className='about-us-content'>Visite una de nuestras tres ubicaciones hoy y descubra su nuevo look.</p>
                 </div>
                 <div className="button-container">
-                    <button className="about-us-btn">LLAMA AHORA</button>
+                    <Link to='contact' smooth={true} duration={500}><button className="about-us-btn">LLAMA AHORA</button></Link>
                 </div>
                 <div className="social-media-container">
                     <a href="#"><i class='fab fa-facebook-square social-media-icon'></i></a>
