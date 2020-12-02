@@ -17,6 +17,11 @@ const Gallery = () => {
                 <img src={moustache} alt="" className="gallery-img"/>
                 <img src={moustache} alt="" className="gallery-img"/>
             </div>
+            <div className="instagram-container">
+                <a href="#" className="instagram-link">
+                    Siganos en Instagram <i class='fab fa-instagram'></i>
+                </a>
+            </div>
         </section>
     )
 }
