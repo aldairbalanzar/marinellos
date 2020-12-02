@@ -76,6 +76,12 @@ body::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.84);
   font-family: "montserrat";
 }
+@media (max-width: 1024px) {
+  .App {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.84);
+  }
+}
 
 /* my styles */
 
@@ -86,6 +92,7 @@ body::-webkit-scrollbar-track {
   position: fixed;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 5px 0 5px;
   box-shadow: 0px 5px 6px rgba(34, 34, 34, 0.7);
 }
@@ -126,6 +133,43 @@ body::-webkit-scrollbar-track {
   color: #ffca67;
   transition: .3s;
 }
+.hamburger-times {
+  color: #fafafa;
+  font-size: 4rem;
+}
+@media (max-width: 1024px) {
+  .navigator {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+  }
+  .nav-open {
+    height: 100vh;
+  }
+  .logo-container {
+    display: none;
+  }
+  .icon-container {
+    width: 100%;
+    justify-content: center;
+    padding: 2% 0;
+  }
+  .icon-container-open {
+    width: 100%;
+    justify-content: center;
+    padding: 3% 0;
+  }
+  .links-container {
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .link {
+    width: 100%;
+    font-size: 4rem;
+    margin: 6% 0;
+  }
+}
 
 
 
@@ -151,11 +195,21 @@ body::-webkit-scrollbar-track {
 .sub-title {
   font-size: 2rem;
 }
+@media (max-width: 1024px) {
+  .home {
+    width: 100%;
+    padding: 7% 1% 3%;
+  }
+  .logo {
+    padding: 8% 0 4%;
+  }
+}
+
 
 
 
 /* about us  */
-.about-us {
+.about-us-section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -216,6 +270,14 @@ body::-webkit-scrollbar-track {
   color: #808080;
   transition: .2s;
 }
+@media (max-width: 1024px) {
+  .about-us-section {
+    width: 48%;
+  }
+  .about-us-btn {
+    width: 50%;
+  }
+}
 
 
 
@@ -275,7 +337,21 @@ body::-webkit-scrollbar-track {
 .salon-info {
   margin: 3% 0;
 }
-
+@media (max-width: 1024px) {
+  .contact-section {
+    border: 2px solid red;
+    padding: 8% 0 0;
+  }
+  .contact-header {
+    padding: 6% 0;
+  }
+  .cards-container {
+    padding: 0 1%;
+  }
+  .salon-card {
+    width: 32%;
+  }
+}
 
 
 .services-section {
@@ -328,6 +404,19 @@ body::-webkit-scrollbar-track {
 .service {
   padding: 1% 0;
 }
+@media (max-width: 1024px) {
+  .services-section {
+    border: 2px solid green;
+    padding: 8% 0 0;
+  }
+  .services-header {
+    padding: 6% 0;
+  }
+  .services-container {
+    padding: 0;
+  }
+}
+
 
 
 
@@ -360,4 +449,12 @@ body::-webkit-scrollbar-track {
   height: 200px;
   margin: 2% 0 0;
   border-radius: 5px;
+}
+@media (max-width: 1024px) {
+  .gallery-section {
+    padding: 8% 0 4%;
+  }
+  .gallery-header {
+    padding: 6% 0 0;
+  }
 }

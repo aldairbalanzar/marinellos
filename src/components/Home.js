@@ -10,7 +10,7 @@ const Home = () => {
                 <h2 className='sub-title'>Beauty Salon</h2>
             </header>
 
-            <section className="about-us">
+            <section className="about-us-section">
                 <h3 className='about-us-title'>&#191;Quienes Somos?</h3>
                 <div className='about-us-content-container'>
                     <p className='about-us-content'>Somos estilistas especializados en estilos para damas, caballeros, y niños.</p>
