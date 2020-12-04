@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Contact from './components/Contact';
@@ -6,9 +7,23 @@ import Gallery from './components/Gallery';
 import './App.css';
 
 function App() {
+
+  const [isNavOpen, setIsNavOpen] = useState(false);
+    const [width, setWidth] = useState(window.screen.width);
+
+    const handleNav = () => {
+        setIsNavOpen(!isNavOpen);
+    };
+
   return (
     <div className="App">
-      <Nav />
+      <Nav 
+      isNavOpen={isNavOpen} 
+      setIsNavOpen={setIsNavOpen} 
+      width={width} 
+      setWidth={setWidth} 
+      handleNav={handleNav}
+      />
       <Home />
       <Contact />
       <Services />

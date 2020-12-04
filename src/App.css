@@ -65,6 +65,7 @@ body::-webkit-scrollbar-track {
   background-color: #fafafa;
 }
 
+/* my styles */
 .App {
   text-align: center;
   max-width: 100%;
@@ -83,7 +84,7 @@ body::-webkit-scrollbar-track {
   }
 }
 
-/* my styles */
+
 
 /* navbar */
 .navigator {
@@ -170,6 +171,11 @@ body::-webkit-scrollbar-track {
     margin: 6% 0;
   }
 }
+@media (max-width: 768px) {
+  .link {
+    font-size: 3.2rem;
+  }
+}
 
 
 
@@ -202,6 +208,11 @@ body::-webkit-scrollbar-track {
   }
   .logo {
     padding: 8% 0 4%;
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    padding: 20% 1% 3%;
   }
 }
 
@@ -278,6 +289,13 @@ body::-webkit-scrollbar-track {
     width: 50%;
   }
 }
+@media (max-width: 768px) {
+  .about-us-section {
+    width: 100%;
+    border-radius: 0px;
+    padding: 2% 4% 2%;
+  }
+}
 
 
 
@@ -290,6 +308,14 @@ body::-webkit-scrollbar-track {
   width: 100%;
   height: 378px;
   border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .instagram-feed {
+    width: 100%;
+  }
+  .instagram-img {
+    border-radius: 0px;
+  }
 }
 
 
@@ -339,7 +365,6 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 1024px) {
   .contact-section {
-    border: 2px solid red;
     padding: 8% 0 0;
   }
   .contact-header {
@@ -350,6 +375,18 @@ body::-webkit-scrollbar-track {
   }
   .salon-card {
     width: 32%;
+  }
+}
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 1% 0 0;
+  }
+  .salon-card {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .location-img {
+    border-radius: 0px;
   }
 }
 
@@ -406,7 +443,6 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 1024px) {
   .services-section {
-    border: 2px solid green;
     padding: 8% 0 0;
   }
   .services-header {
@@ -463,7 +499,7 @@ body::-webkit-scrollbar-track {
 }
 .instagram-link {
   color: #c5c5c5;
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-decoration: none;
   transition: .35s;
 }
@@ -484,5 +520,11 @@ body::-webkit-scrollbar-track {
   .gallery-img {
     width: 46%;
     height: 464px;
+  }
+}
+@media (max-width: 768px) {
+  .gallery-img {
+    width: 100%;
+    border-radius: 0px;
   }
 }
