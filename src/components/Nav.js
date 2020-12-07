@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 
-const Nav = ({ isNavOpen, setIsNavOpen, width, setWidth, handleNav }) => {
+const Nav = ({ isNavOpen, width, setWidth, handleNav }) => {
 
     useEffect(() => {
         window.addEventListener('resize', () => setWidth(window.screen.width));

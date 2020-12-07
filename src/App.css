@@ -209,10 +209,16 @@ body::-webkit-scrollbar-track {
   .logo {
     padding: 8% 0 4%;
   }
+  .title {
+    font-size: 3.4rem;
+  }
 }
 @media (max-width: 768px) {
   .home {
-    padding: 20% 1% 3%;
+    padding: 26% 0 3%;
+  }
+  .title {
+    font-size: 3.6rem;
   }
 }
 
@@ -251,7 +257,7 @@ body::-webkit-scrollbar-track {
   padding: 2% 4%;
   font-size: 1.3rem;
   border: none;
-  border-radius: 3px;
+  border-radius: 9px;
   color: #fafafa;
   background-color: #df6e05;
   transition: .4s;
@@ -293,7 +299,32 @@ body::-webkit-scrollbar-track {
   .about-us-section {
     width: 100%;
     border-radius: 0px;
-    padding: 2% 4% 2%;
+    padding: 6% 3%;
+    background-color: transparent;
+    color: #fafafa;
+  }
+  .about-us-title {
+    font-size: 2rem;
+    padding: 3% 0 0;
+  }
+  .about-us-content {
+    font-size: 1.6rem;
+  }
+  .button-container {
+    padding: 10% 0;
+  }
+  .about-us-btn {
+    width: 80%;
+    font-size: 2rem;
+    padding: 5% 3%;
+  }
+  .social-media-container {
+    width: 80%;
+    justify-content: space-between;
+  }
+  .social-media-icon {
+    font-size: 4.4rem;
+    color: #fafafa;
   }
 }
 
@@ -365,7 +396,7 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 1024px) {
   .contact-section {
-    padding: 8% 0 0;
+    padding: 10% 0 0;
   }
   .contact-header {
     padding: 6% 0;
@@ -379,7 +410,7 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 768px) {
   .contact-section {
-    padding: 1% 0 0;
+    padding: 24% 0 0;
   }
   .salon-card {
     width: 100%;
@@ -430,26 +461,66 @@ body::-webkit-scrollbar-track {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   color: #fafafa;
   font-size: 1.4rem;
   padding: 3% 0 0;
 }
 .statement {
-  width: 46%;
-  line-height: 1.8rem;;
+  width: 44%;
+  line-height: 2.4rem;
+}
+.list {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  list-style: disc;
 }
 .service {
+  width: 100%;
   padding: 1% 0;
 }
 @media (max-width: 1024px) {
   .services-section {
-    padding: 8% 0 0;
+    padding: 10% 0 0;
   }
   .services-header {
     padding: 6% 0;
   }
   .services-container {
     padding: 0;
+  }
+  .statement {
+    font-size: 1.6rem;
+  }
+  .list {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .services-section {
+    padding: 24% 0 0;
+  }
+  .service-img {
+    width: 100%;
+    height: 400px;
+  }
+  .statement {
+    width: 100%;
+    padding: 5% 1%;
+  }
+  .list {
+    width: 80%;
+    text-align: center;
+    list-style: disc;
+    padding: 5% 0 0;
+  }
+  .service {
+    padding: 3% 0;
   }
 }
 
@@ -509,7 +580,7 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 1024px) {
   .gallery-section {
-    padding: 8% 0 4%;
+    padding: 10% 0 4%;
   }
   .gallery-header {
     padding: 6% 0 0;
@@ -523,8 +594,14 @@ body::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 768px) {
+  .gallery-section {
+    padding: 24% 0 0;
+  }
   .gallery-img {
     width: 100%;
     border-radius: 0px;
+  }
+  .instagram-container {
+    padding: 5% 0 2%;
   }
 }

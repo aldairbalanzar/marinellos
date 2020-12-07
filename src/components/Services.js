@@ -4,13 +4,16 @@ import child_cut from '../assets/child_cut_1.jpg';
 import blowout_hair from '../assets/blowout_hair.jpg';
 import curly_hair from '../assets/curly_hair.jpg';
 
-const Services = () => {
+const Services = ({width}) => {
     return (
         <section className='services-section' id='services'>
             <header className='services-header'>
                 <h1 className="services-title">SERVICIOS</h1>
             </header>
             <div className="services-container">
+                {width > 768
+                ?
+                <>
                 <div className="images-container">
                     <img className='service-img' src={purple_hair} alt=""/>
                     <img className='service-img' src={child_cut} alt=""/>
@@ -24,9 +27,28 @@ const Services = () => {
                         <li className="service">Cortes para damas</li>
                         <li className="service">Cortes para caballeros</li>
                         <li className="service">Cortes para ni&ntilde;os</li>
-                        <li className="service"></li>
+                        <li className="service">Enlacie de cabello</li>
+                        <li className="service">Lavado de cabello</li>
                     </ul>
                 </div>
+                </>
+                :
+                <>
+                <div className="text-container">
+                    <img className='service-img' src={purple_hair} alt=""/>
+                    <p className='statement'>Nosotros hacemos cortes para damas, caballeros, y ni&ntilde;os, tambi&eacute;n nos especializamos en tintes, enlacies, lavados de cabello, arregle de cejas, barba, y m&aacute;s.</p>
+                    <img className='service-img' src={blowout_hair} alt=""/>
+                    <ul className="list">
+                        <li className="service">Tintes de cabello</li>
+                        <li className="service">Cortes para damas</li>
+                        <li className="service">Cortes para caballeros</li>
+                        <li className="service">Cortes para ni&ntilde;os</li>
+                        <li className="service">Enlacie de cabello</li>
+                        <li className="service">Lavado de cabello</li>
+                    </ul>
+                </div>
+                </>
+                }
             </div>
         </section>
     )
