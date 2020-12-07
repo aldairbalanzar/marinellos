@@ -24,9 +24,13 @@ function App() {
       setWidth={setWidth} 
       handleNav={handleNav}
       />
-      <Home />
+      <Home 
+      width={width}
+      />
       <Contact />
-      <Services />
+      <Services
+      width={width} 
+      />
       <Gallery />
     </div>
   );
