@@ -8,10 +8,19 @@ const SalonCard = () => {
             className='location-img'
             src={temp_img}
             alt='marinellos location'/>
-            <div className="info-container">
-                <p className='salon-info'>NAME</p>
-                <p className='salon-info'>LOCATION</p>
-                <p className='salon-info'>NUMBER</p>
+            <div className="salon-data-container">
+                <div className="data-container">
+                    <i class="fas fa-store-alt"></i>
+                    <p className='salon-data'>NAME</p>
+                </div>
+                <div className="data-container">
+                    <i class="fas fa-location-arrow"></i>
+                    <p className='salon-data'>LOCATION</p>
+                </div>
+               <div className="data-container">
+                    <i class="fas fa-phone"></i>
+                    <p className='salon-data'>NUMBER</p>
+               </div>
             </div>
         </div>
     )

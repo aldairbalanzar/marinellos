@@ -377,6 +377,9 @@ body::-webkit-scrollbar-track {
 }
 .salon-card {
   width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   background-color: #fafafa;
   border-radius: 5px;
 }
@@ -386,14 +389,25 @@ body::-webkit-scrollbar-track {
   object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
-.info-container {
+.salon-data-container {
   width: 100%;
-  padding: 4% 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4% 10%;
   color: #4f4f4f;
 }
-.salon-info {
+.data-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 3% 0;
 }
+.salon-data {
+  width: 88%;
+}
+
 @media (max-width: 1024px) {
   .contact-section {
     padding: 10% 0 0;
