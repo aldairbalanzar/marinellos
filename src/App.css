@@ -257,7 +257,7 @@ body::-webkit-scrollbar-track {
   padding: 2% 4%;
   font-size: 1.3rem;
   border: none;
-  border-radius: 9px;
+  border-radius: 5px;
   color: #fafafa;
   background-color: #df6e05;
   transition: .4s;
