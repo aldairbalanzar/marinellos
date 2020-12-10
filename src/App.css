@@ -141,7 +141,7 @@ body::-webkit-scrollbar-track {
 }
 .hamburger-times {
   color: #fafafa;
-  font-size: 3.6rem;
+  font-size: 2.8rem;
 }
 @media (max-width: 1024px) {
   .navigator {
@@ -220,7 +220,7 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 768px) {
   .home {
-    padding: 22% 0 3%;
+    padding: 16% 0 3%;
   }
 }
 
@@ -316,7 +316,7 @@ body::-webkit-scrollbar-track {
     font-size: 1.4rem;
   }
   .button-container {
-    padding: 10% 0;
+    padding: 8% 0;
   }
   .about-us-btn {
     width: 80%;
@@ -326,9 +326,10 @@ body::-webkit-scrollbar-track {
   .social-media-container {
     width: 80%;
     justify-content: space-between;
+    margin: 2% 0 0;
   }
   .social-media-icon {
-    font-size: 4.4rem;
+    font-size: 3.6rem;
     color: #fafafa;
   }
 }
