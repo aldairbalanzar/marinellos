@@ -17,15 +17,15 @@ function App() {
       setIsNavOpen(!isNavOpen);
   };
 
-  useEffect(() => {
-    axios.get(`https://www.instagram.com/marinellosbeautysalon`)
-    .then(res => {
-      console.log('response: ', res);
-    })
-    .catch(err => {
-      console.log('error: ', err)
-    })
-  }, []);
+  // useEffect(() => {
+  //   axios.get(`https://www.instagram.com/marinellosbeautysalon`)
+  //   .then(res => {
+  //     console.log('response: ', res);
+  //   })
+  //   .catch(err => {
+  //     console.log('error: ', err)
+  //   })
+  // }, []);
 
   return (
     <div className="App">

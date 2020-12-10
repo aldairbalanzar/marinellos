@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
 
 const Nav = ({ isNavOpen, width, setWidth, handleNav }) => {
 
     useEffect(() => {
         window.addEventListener('resize', () => setWidth(window.screen.width));
-    }, []);
+    }, [setWidth]);
 
     return (
         <nav className={`navigator ${isNavOpen && 'nav-open'}`}>
