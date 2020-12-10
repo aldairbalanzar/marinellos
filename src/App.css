@@ -37,6 +37,11 @@ body {
   background-attachment: fixed;
   height: 100vh;
 }
+@media (max-width: 1024px) {
+  body {
+    background-size: cover;
+  }
+}
 ol, ul {
 	list-style: none;
 }
@@ -136,7 +141,7 @@ body::-webkit-scrollbar-track {
 }
 .hamburger-times {
   color: #fafafa;
-  font-size: 4rem;
+  font-size: 3.6rem;
 }
 @media (max-width: 1024px) {
   .navigator {
@@ -210,15 +215,12 @@ body::-webkit-scrollbar-track {
     padding: 8% 0 4%;
   }
   .title {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
   }
 }
 @media (max-width: 768px) {
   .home {
-    padding: 26% 0 3%;
-  }
-  .title {
-    font-size: 3.6rem;
+    padding: 22% 0 3%;
   }
 }
 
@@ -308,19 +310,18 @@ body::-webkit-scrollbar-track {
     color: #fafafa;
   }
   .about-us-title {
-    font-size: 2rem;
     padding: 3% 0 0;
   }
   .about-us-content {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .button-container {
     padding: 10% 0;
   }
   .about-us-btn {
     width: 80%;
-    font-size: 2rem;
-    padding: 5% 3%;
+    font-size: 1.8rem;
+    padding: 4% 2%;
   }
   .social-media-container {
     width: 80%;
