@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Contact from './components/Contact';
@@ -9,11 +10,22 @@ import './App.css';
 function App() {
 
   const [isNavOpen, setIsNavOpen] = useState(false);
-    const [width, setWidth] = useState(window.screen.width);
+  const [width, setWidth] = useState(window.screen.width);
+  const [feed, setFeed] = useState([])
 
-    const handleNav = () => {
-        setIsNavOpen(!isNavOpen);
-    };
+  const handleNav = () => {
+      setIsNavOpen(!isNavOpen);
+  };
+
+  useEffect(() => {
+    axios.get(`https://www.instagram.com/marinellosbeautysalon`)
+    .then(res => {
+      console.log('response: ', res);
+    })
+    .catch(err => {
+      console.log('error: ', err)
+    })
+  }, []);
 
   return (
     <div className="App">

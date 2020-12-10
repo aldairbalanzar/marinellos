@@ -19,7 +19,7 @@ const Gallery = () => {
             </div>
             <div className="instagram-container">
                 <a href="#" className="instagram-link">
-                    Siganos en Instagram <i class='fab fa-instagram'></i>
+                    Siganos en Instagram <i className='fab fa-instagram'></i>
                 </a>
             </div>
         </section>
