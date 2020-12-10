@@ -141,7 +141,7 @@ body::-webkit-scrollbar-track {
 }
 .hamburger-times {
   color: #fafafa;
-  font-size: 2.8rem;
+  font-size: 2.6rem;
 }
 @media (max-width: 1024px) {
   .navigator {
@@ -316,7 +316,7 @@ body::-webkit-scrollbar-track {
     font-size: 1.4rem;
   }
   .button-container {
-    padding: 8% 0;
+    padding: 2% 0;
   }
   .about-us-btn {
     width: 80%;
