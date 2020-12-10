@@ -20,8 +20,8 @@ const Home = ({width}) => {
                     <Link to='contact' smooth={true} duration={500}><button className="about-us-btn">LLAME AHORA</button></Link>
                 </div>
                 <div className="social-media-container">
-                    <a href="#"><i class='fab fa-facebook-square social-media-icon'></i></a>
-                    <a href="#"><i class='fab fa-instagram-square social-media-icon'></i></a>
+                    <a href="#"><i className='fab fa-facebook-square social-media-icon'></i></a>
+                    <a href="#"><i className='fab fa-instagram-square social-media-icon'></i></a>
                 </div>
             </section>
 
