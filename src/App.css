@@ -326,7 +326,7 @@ body::-webkit-scrollbar-track {
   .social-media-container {
     width: 80%;
     justify-content: space-between;
-    margin: 2% 0 0;
+    margin: 4% 0 0;
   }
   .social-media-icon {
     font-size: 3.6rem;
