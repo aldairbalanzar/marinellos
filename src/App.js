@@ -17,15 +17,21 @@ function App() {
       setIsNavOpen(!isNavOpen);
   };
 
-  // useEffect(() => {
-  //   axios.get(`https://www.instagram.com/marinellosbeautysalon`)
-  //   .then(res => {
-  //     console.log('response: ', res);
-  //   })
-  //   .catch(err => {
-  //     console.log('error: ', err)
-  //   })
-  // }, []);
+  const fetchInstagramAccessToken = () => {
+    axios.get(`https://api.instagram.com/oauth/authorize
+    ?client_id=${process.env.APP_ID}
+    &redirect_uri=${process.env.REDIRECT_URI}
+    &scope=user_profile,user_media
+    &response_type=code`)
+    .then( res => {
+      console.log('response: ', res)
+    })
+  }
+
+  useEffect(() => {
+    // handleInstagramFeed()
+    fetchInstagramAccessToken()
+  }, []);
 
   return (
     <div className="App">
