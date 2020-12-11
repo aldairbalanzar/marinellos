@@ -26,11 +26,6 @@ function App() {
     &scope=user_profile,user_media
     &response_type=code`)
     .then( res => {
-      console.log('url: ', `https://api.instagram.com/oauth/authorize
-      ?client_id=${REACT_APP_INSTAGRAM_ID}
-      &redirect_uri=${REACT_APP_REDIRECT_URI}
-      &scope=user_profile,user_media
-      &response_type=code`)
       console.log('response: ', res)
     })
     .catch(err => {
@@ -44,6 +39,11 @@ function App() {
   }, []);
 
   console.log('ID: ', REACT_APP_INSTAGRAM_ID, 'REDIRECT: ', REACT_APP_REDIRECT_URI);
+  console.log('url: ', `https://api.instagram.com/oauth/authorize
+      ?client_id=${REACT_APP_INSTAGRAM_ID}
+      &redirect_uri=${REACT_APP_REDIRECT_URI}
+      &scope=user_profile,user_media
+      &response_type=code`)
 
   return (
     <div className="App">
