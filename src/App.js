@@ -8,10 +8,12 @@ import Gallery from './components/Gallery';
 import './App.css';
 
 function App() {
+  const APP_ID = process.env.APP_ID;
+  const REDIRECT_URI = process.env.REDIRECT_URI;
 
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [width, setWidth] = useState(window.screen.width);
-  const [feed, setFeed] = useState([])
+  const [feed, setFeed] = useState([]);
 
   const handleNav = () => {
       setIsNavOpen(!isNavOpen);
@@ -19,12 +21,15 @@ function App() {
 
   const fetchInstagramAccessToken = () => {
     axios.get(`https://api.instagram.com/oauth/authorize
-    ?client_id=${process.env.APP_ID}
-    &redirect_uri=${process.env.REDIRECT_URI}
+    ?client_id=${APP_ID}
+    &redirect_uri=${REDIRECT_URI}
     &scope=user_profile,user_media
     &response_type=code`)
     .then( res => {
       console.log('response: ', res)
+    })
+    .catch(err => {
+      console.log('error: ', err)
     })
   }
 
@@ -32,6 +37,8 @@ function App() {
     // handleInstagramFeed()
     fetchInstagramAccessToken()
   }, []);
+
+  console.log('ID: ', APP_ID, 'REDIRECT: ', REDIRECT_URI);
 
   return (
     <div className="App">
