@@ -1,21 +1,18 @@
 import React from 'react';
-import moustache from '../assets/moustache.jpg';
+import GalleryImg from './GalleryImg';
 
-const Gallery = () => {
+const Gallery = ({ feed }) => {
     return (
         <section className='gallery-section' id='gallery'>
             <header className='gallery-header'>
                 <h1 className='gallery-title'>GALER&Iacute;A</h1>
             </header>
             <div className='image-container'>
-                <img src={moustache} alt="" className="gallery-img"/>
-                <img src={moustache} alt="" className="gallery-img"/>
-                <img src={moustache} alt="" className="gallery-img"/>
-                <img src={moustache} alt="" className="gallery-img"/>
-                <img src={moustache} alt="" className="gallery-img"/>
-                <img src={moustache} alt="" className="gallery-img"/>
-                <img src={moustache} alt="" className="gallery-img"/>
-                <img src={moustache} alt="" className="gallery-img"/>
+                {feed.map(post => {
+                    return(
+                        <GalleryImg post={post} />
+                    )
+                })}
             </div>
             <div className="instagram-container">
                 <button className="instagram-link">
