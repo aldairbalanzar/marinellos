@@ -3,7 +3,6 @@ import salons from '../assets/salons';
 import SalonCard from './SalonCard';
 
 const Contact = ({ width }) => {
-    console.log('contact: ', width);
     const [salonNum, setSalonNum] = useState(0)
 
     const handleSalonNum = (action) => {
