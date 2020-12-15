@@ -617,7 +617,7 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 768px) {
   .gallery-section {
-    padding: 18% 0 0;
+    padding: 10% 0 8%;
   }
   .gallery-img {
     width: 100%;
