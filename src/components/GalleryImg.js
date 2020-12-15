@@ -1,13 +1,14 @@
 import React from 'react'
+import wavy_hair from '../assets/wavy_hair.jpg'
 
 const GalleryImg = ({ post }) => {
+    let { thumbnail_src, accessibility_caption } = post
     return (
         <>
             <img 
-            key={post.node.id}
             className='gallery-img'
-            src={post.node.thumbnail_src}
-            alt={post.node.accessibility_caption}
+            src={thumbnail_src || wavy_hair}
+            alt={accessibility_caption || 'placeholder'}
             />
         </>
     )

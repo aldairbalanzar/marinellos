@@ -1,7 +1,7 @@
 import React from 'react';
 import temp_img from '../assets/location_1.jpg';
 
-const SalonCard = () => {
+const SalonCard = ({salon}) => {
     return (
         <div className='salon-card'>
             <img
@@ -11,15 +11,15 @@ const SalonCard = () => {
             <div className="salon-data-container">
                 <div className="data-container">
                     <i className="fas fa-store-alt"></i>
-                    <p className='salon-data'>NAME</p>
+                    <p className='salon-data'>{salon.city}</p>
                 </div>
                 <div className="data-container">
                     <i className="fas fa-location-arrow"></i>
-                    <p className='salon-data'>LOCATION</p>
+                    <p className='salon-data'>{salon.address}</p>
                 </div>
                <div className="data-container">
                     <i className="fas fa-phone"></i>
-                    <p className='salon-data'>NUMBER</p>
+                    <p className='salon-data'>{salon.phone}</p>
                </div>
             </div>
         </div>
