@@ -20,7 +20,9 @@ function App() {
   const fetchInstagramJSON = () => {
     axios.get(`https://www.instagram.com/marinellosbeautysalon/?__a=1`)
     .then(res => {
-      setFeed(res.data.graphql.user.edge_owner_to_timeline_media.edges)
+      console.log(res)
+      // console.log('data: ', res.data)
+      setFeed([...res.data.graphql.user.edge_owner_to_timeline_media.edges.slice(0,8)])
     })
     .catch(err => {
       console.log('err: ', err)
@@ -30,8 +32,6 @@ function App() {
   useEffect(() => {
     fetchInstagramJSON()
   }, []);
-
-  console.log('feed: ', feed);
 
   return (
     <div className="App">
@@ -45,11 +45,15 @@ function App() {
       <Home 
       width={width}
       />
-      <Contact />
+      <Contact 
+      width={width}
+      />
       <Services
       width={width} 
       />
-      <Gallery feed={feed}/>
+      <Gallery
+      width={width}
+      feed={feed}/>
     </div>
   );
 }
