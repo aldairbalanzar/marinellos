@@ -14,12 +14,13 @@ function App() {
   const [feed, setFeed] = useState([]);
 
   const handleNav = () => {
-      setIsNavOpen(!isNavOpen);
+    setIsNavOpen(!isNavOpen);
   };
 
   const fetchInstagramJSON = () => {
     axios.get(`https://www.instagram.com/marinellosbeautysalon/?__a=1`)
     .then(res => {
+      console.log('response: ', res.data)
       setFeed([...res.data.graphql.user.edge_owner_to_timeline_media.edges.slice(0,8)])
     })
     .catch(err => {
