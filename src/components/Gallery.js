@@ -46,7 +46,14 @@ const Gallery = ({ width, feed }) => {
                 <button className='arrow-btn' onClick={() => {handlePostNum('minus')}}>
                     <i className='fas fa-less-than'></i>
                 </button>
-                <p className='img-position'>{postNum + 1} / {feed.length}</p>
+                <p className='img-position'>
+                {feed.length > 0
+                ?
+                `${postNum + 1} / ${feed.length}`
+                :
+                '1/1'
+                }
+                </p>
                 <button className='arrow-btn' onClick={() => {handlePostNum('plus')}}>
                     <i className='fas fa-greater-than'></i>
                 </button>
