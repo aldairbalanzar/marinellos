@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import GalleryImg from './GalleryImg';
 
 const Gallery = ({ width, feed }) => {
+    console.log('feed: ', feed)
     const [postNum, setPostNum] = useState(0);
 
     const handlePostNum = (action) => {
@@ -27,10 +28,10 @@ const Gallery = ({ width, feed }) => {
             {width > 764
             ? 
             <div className='image-container'>
-            {feed.map(post => {
+            {feed.map((post, i) => {
                 return(
                 <GalleryImg 
-                key={post.node.id}
+                key={post.node.id || i}
                 post={post.node} 
                 />
                 )
@@ -39,7 +40,7 @@ const Gallery = ({ width, feed }) => {
             :
             <>
             <div className='image-container'>
-                <GalleryImg post={feed[postNum] ? feed[postNum] : null} />
+                <GalleryImg post={feed.length > 1 ? feed[postNum] : null} />
             </div>
             <div className="arrows-container">
                 <button className='arrow-btn' onClick={() => {handlePostNum('minus')}}>
