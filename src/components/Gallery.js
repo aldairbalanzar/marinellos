@@ -32,7 +32,7 @@ const Gallery = ({ width, feed }) => {
                 return(
                 <GalleryImg 
                 key={post.node.id || i}
-                post={post.node} 
+                post={post} 
                 />
                 )
             })}
