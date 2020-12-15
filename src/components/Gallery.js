@@ -39,7 +39,7 @@ const Gallery = ({ width, feed }) => {
             :
             <>
             <div className='image-container'>
-                <GalleryImg post={feed[postNum].node ? feed[postNum].node : null} />
+                <GalleryImg post={feed[postNum] ? feed[postNum] : null} />
             </div>
             <div className="arrows-container">
                 <button className='arrow-btn' onClick={() => {handlePostNum('minus')}}>
