@@ -8,12 +8,12 @@ const Gallery = ({ width, feed }) => {
     const handlePostNum = (action) => {
         if(action === 'plus') {
             postNum === feed.length - 1
-            ? setPostNum(postNum)
+            ? setPostNum(0)
             : setPostNum(postNum + 1) 
         }
         else if(action === 'minus') {
             postNum === 0
-            ? setPostNum(postNum)
+            ? setPostNum(feed.length - 1)
             : setPostNum(postNum - 1)
         } else {
             return

@@ -8,12 +8,12 @@ const Contact = ({ width }) => {
     const handleSalonNum = (action) => {
         if(action === 'plus') {
             salonNum === salons.length - 1
-            ? setSalonNum(salonNum)
+            ? setSalonNum(0)
             : setSalonNum(salonNum + 1) 
         }
         else if(action === 'minus') {
             salonNum === 0
-            ? setSalonNum(salonNum)
+            ? setSalonNum(salons.length - 1)
             : setSalonNum(salonNum - 1)
         } else {
             return
