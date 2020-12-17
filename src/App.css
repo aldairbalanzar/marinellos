@@ -140,7 +140,6 @@ body::-webkit-scrollbar-track {
   transition: .3s;
 }
 .hamburger-times {
-  border: 2px solid red;
   color: #fafafa;
   font-size: 2.4rem;
   padding: 2%;

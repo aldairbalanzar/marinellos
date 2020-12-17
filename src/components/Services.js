@@ -36,7 +36,7 @@ const Services = ({width}) => {
                 <>
                 <div className="text-container">
                     <img className='service-img' src={purple_hair} alt=""/>
-                    <p className='statement'>Nosotros hacemos cortes para damas, caballeros, y ni&ntilde;os, tambi&eacute;n nos especializamos en tintes, enlacies, lavados de cabello, arregle de cejas, barba, y m&aacute;s.</p>
+                    <p className='statement'>Nosotros hacemos cortes para damas, caballeros, y ni&ntilde;os. Tambi&eacute;n, nos especializamos en tintes, enlacies, lavados de cabello, arregle de cejas, barba, y m&aacute;s.</p>
                     <img className='service-img' src={blowout_hair} alt=""/>
                     <ul className="list">
                         <li className="service">Tintes de cabello</li>
