@@ -644,3 +644,30 @@ body::-webkit-scrollbar-track {
     padding: 10% 0 5%;
   }
 }
+
+
+
+.footer-section {
+  width: 100%;
+  background-color: black;
+  padding: 4% 0 0;
+}
+.copyright-statement {
+  color: #fafafa;
+}
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  padding: 2% 0;
+}
+.footer-social-media-btn {
+  border: none;
+  background-color: transparent;
+  color: #fafafa;
+}
+.footer-social-icon {
+  color: #fafafa;
+}
+.footer-social-icon:hover {
+  color: #fafafa;
+}
