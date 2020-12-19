@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -52,7 +53,10 @@ function App() {
       />
       <Gallery
       width={width}
-      feed={feed}/>
+      feed={feed}
+      />
+      <Footer 
+      />
     </div>
   );
 }
