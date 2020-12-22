@@ -657,8 +657,18 @@ body::-webkit-scrollbar-track {
 }
 .footer-social-links {
   display: flex;
+  flex-wrap: wrap;
+  margin: 5% 0 3%;
+}
+.social-footer-header {
+  width: 100%;
+  color: #fafafa;
+  padding: 0 0 3%;
+}
+.footer-social-links {
+  display: flex;
   justify-content: center;
-  padding: 2% 0;
+  padding: 3% 0;
 }
 .footer-social-media-btn {
   border: none;
