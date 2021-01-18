@@ -28,9 +28,9 @@ const Contact = ({ width }) => {
             {width > 764
             ?
             <div className="cards-container">
-                {salons.map(salon => {
+                {salons.map((salon, i) => {
                     return(
-                        <SalonCard salon={salon}/>
+                        <SalonCard key={i} salon={salon}/>
                     )
                 })}
             </div>
