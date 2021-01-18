@@ -432,7 +432,7 @@ body::-webkit-scrollbar-track {
 
 @media (max-width: 1024px) {
   .contact-section {
-    padding: 10% 0 0;
+    padding: 8% 0 0;
   }
   .contact-header {
     padding: 6% 0;
@@ -446,7 +446,7 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 768px) {
   .contact-section {
-    padding: 12% 0 0;
+    padding: 10% 0 0;
   }
   .salon-card {
     width: 100%;
@@ -520,7 +520,7 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 1024px) {
   .services-section {
-    padding: 10% 0 0;
+    padding: 8% 0 0;
   }
   .services-header {
     padding: 6% 0;
@@ -539,7 +539,7 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 768px) {
   .services-section {
-    padding: 12% 0 0;
+    padding: 10% 0 0;
   }
   .service-img {
     width: 100%;
@@ -619,7 +619,7 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 1024px) {
   .gallery-section {
-    padding: 10% 0 4%;
+    padding: 8% 0 4%;
   }
   .gallery-header {
     padding: 6% 0 0;
