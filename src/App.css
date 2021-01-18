@@ -618,9 +618,6 @@ body::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 768px) {
-  .gallery-section {
-    padding: 0 0 8%;
-  }
   .gallery-title {
     margin: 0 0 8%;
   }
@@ -645,7 +642,7 @@ body::-webkit-scrollbar-track {
     font-size: 2.2rem;
   }
   .instagram-container {
-    padding: 10% 0 10%;
+    padding: 16% 0 10%;
   }
 }
 
