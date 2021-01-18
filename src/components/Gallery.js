@@ -5,22 +5,6 @@ import placeholderImg from '../assets/wavy_hair.jpg'
 
 const Gallery = ({ width, feed }) => {
     console.log('feed: ', feed)
-    // const [postNum, setPostNum] = useState(0);
-
-    // const handlePostNum = (action) => {
-    //     if(action === 'plus') {
-    //         postNum === feed.length - 1
-    //         ? setPostNum(0)
-    //         : setPostNum(postNum + 1) 
-    //     }
-    //     else if(action === 'minus') {
-    //         postNum === 0
-    //         ? setPostNum(feed.length - 1)
-    //         : setPostNum(postNum - 1)
-    //     } else {
-    //         return
-    //     }
-    // }
 
     return (
         <section className='gallery-section' id='gallery'>

@@ -28,10 +28,25 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url('./assets/salon_chairs_bg.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body {
   line-height: 1;
   background-image: url('./assets/salon_chairs_bg.jpg');
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: 100%;
   background-position: 0 60%;
   background-attachment: fixed;
