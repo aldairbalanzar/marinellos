@@ -1,7 +1,9 @@
 import React from 'react';
 import GalleryImg from './GalleryImg';
 import MobileGallery from './MobileGallery';
-import placeholderImg from '../assets/wavy_hair.jpg'
+import placeholderImg from '../assets/wavy_hair.jpg';
+import blowout from '../assets/blowout_hair.jpg';
+import child_cut from '../assets/child_cut_1.jpg';
 
 const Gallery = ({ width, feed }) => {
     console.log('feed: ', feed)
@@ -31,8 +33,8 @@ const Gallery = ({ width, feed }) => {
                 :
                 <>
                 <img src={placeholderImg} alt="placeholder" className='gallery-img'/>
-                <img src={placeholderImg} alt="placeholder" className='gallery-img'/>
-                <img src={placeholderImg} alt="placeholder" className='gallery-img'/>
+                <img src={blowout} alt="placeholder" className='gallery-img'/>
+                <img src={child_cut} alt="placeholder" className='gallery-img'/>
                 </>
                 }
             </div>
