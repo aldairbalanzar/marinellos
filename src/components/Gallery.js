@@ -14,23 +14,17 @@ const Gallery = ({ width, feed }) => {
                 <h1 className='gallery-title'>GALER&Iacute;A</h1>
             </header>
 
-            {width > 764
-
-            ? // DESKTOP & TABLET VIEW
+            {/*DESKTOP & TABLET VIEW */}
             <div className='image-container'>
-                {
-                feed.length > 0
+                {feed.length > 0
                 ?
-                feed.map((post, i) => {
-                    console.log('mobile')
-                    return(
+                feed.map((post, i) => (
                     <GalleryImg 
                     key={i}
                     post={post} 
                     placeholderImg={placeholderImg}
                     />
-                    )
-                })
+                ))
                 :
                 <>
                 <img src={placeholderImg} alt="placeholder" className='gallery-img'/>
@@ -40,12 +34,12 @@ const Gallery = ({ width, feed }) => {
                 }
             </div>
 
-            : // MOBILE VIEW
+            {/* // MOBILE VIEW */}
             <MyCarousel
+            width={width}
             feed={feed}
             placeholderImg={placeholderImg}
             />
-            }
 
             <div className="instagram-container">
                 <button className="instagram-link" >

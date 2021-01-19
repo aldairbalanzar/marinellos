@@ -2,7 +2,7 @@ import React from 'react'
 import wavy_hair from '../assets/wavy_hair.jpg'
 import { Link } from 'react-scroll';
 
-const Home = ({width}) => {
+const Home = () => {
     return (
         <main className='home' id='home'>
             <header className='logo'>
@@ -31,15 +31,13 @@ const Home = ({width}) => {
                 </div>
             </section>
 
-            {width > 764 &&
-                <section className='instagram-feed'>
-                    <img 
-                    src={wavy_hair}
-                    alt='girl with blonde hair tilting her head'
-                    className='instagram-img'
-                    />
-                </section>
-            }
+            <section className='instagram-feed'>
+                <img 
+                src={wavy_hair}
+                alt='girl with blonde hair tilting her head'
+                className='instagram-img'
+                />
+            </section>
         </main>
     )
 }

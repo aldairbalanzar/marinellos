@@ -11,7 +11,6 @@ import './App.css';
 function App() {
 
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [width, setWidth] = useState(window.screen.width);
   const [feed, setFeed] = useState([]);
 
   const handleNav = () => {
@@ -22,7 +21,6 @@ function App() {
     axios.get(`https://www.instagram.com/marinellosbeautysalon/?__a=1`)
     .then(res => {
       // console.log('response: ', res.data)
-      // console.log(typeof(res.data))
       
       if(res.data.graphql) {
         setFeed([...res.data.graphql.user.edge_owner_to_timeline_media.edges.slice(0,8)])
@@ -42,25 +40,15 @@ function App() {
       <Nav 
       isNavOpen={isNavOpen} 
       setIsNavOpen={setIsNavOpen} 
-      width={width} 
-      setWidth={setWidth} 
       handleNav={handleNav}
       />
-      <Home 
-      width={width}
-      />
-      <Contact 
-      width={width}
-      />
-      <Services
-      width={width} 
-      />
+      <Home />
+      <Contact />
+      <Services />
       <Gallery
-      width={width}
       feed={feed}
       />
-      <Footer 
-      />
+      <Footer />
     </div>
   );
 }
