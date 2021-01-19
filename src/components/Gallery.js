@@ -1,6 +1,6 @@
 import React from 'react';
 import GalleryImg from './GalleryImg';
-import MobileGallery from './MobileGallery';
+import MyCarousel from './MyCarousel';
 import placeholderImg from '../assets/wavy_hair.jpg';
 import blowout from '../assets/blowout_hair.jpg';
 import child_cut from '../assets/child_cut_1.jpg';
@@ -15,7 +15,8 @@ const Gallery = ({ width, feed }) => {
             </header>
 
             {width > 764
-            ? 
+
+            ? // DESKTOP & TABLET VIEW
             <div className='image-container'>
                 {
                 feed.length > 0
@@ -38,8 +39,9 @@ const Gallery = ({ width, feed }) => {
                 </>
                 }
             </div>
-            :
-            <MobileGallery
+
+            : // MOBILE VIEW
+            <MyCarousel
             feed={feed}
             placeholderImg={placeholderImg}
             />
