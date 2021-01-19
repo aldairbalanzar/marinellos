@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import salons from '../assets/salons';
 import SalonCard from './SalonCard';
 
-const Contact = ({ width }) => {
+const Contact = () => {
     const [salonNum, setSalonNum] = useState(0)
 
     const handleSalonNum = (action) => {
@@ -25,17 +25,16 @@ const Contact = ({ width }) => {
             <header className='contact-header'>
                 <h1 className='contact-title'>CONTACTO</h1>
             </header>
-            {width > 764
-            ?
-            <div className="cards-container">
+
+            <div className='cards-container'>
                 {salons.map((salon, i) => {
                     return(
                         <SalonCard key={i} salon={salon}/>
                     )
                 })}
             </div>
-            :
-            <div className="cards-container">
+
+            <div className='cards-container-mobile'>
                 <SalonCard salon={salons[salonNum]}/>
                 <div className="arrows-container">
                     <button className='arrow-btn' onClick={() => {handleSalonNum('minus')}}>
@@ -47,7 +46,7 @@ const Contact = ({ width }) => {
                     </button>
                 </div>
             </div>
-            }
+
         </section>
     )
 }

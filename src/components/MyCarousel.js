@@ -8,7 +8,7 @@ const MobileGallery = ({ feed, placeholderImg }) => {
     return (
         feed.length > 0
         ?
-        <Carousel showThumbs={false}>
+        <Carousel className='carousel' showThumbs={false}>
             {feed.map((post, i) => (
                 <div key={i}>
                     <img src={post.node.thumbnail_src} alt={post.node.accessibility_caption}/>
@@ -16,7 +16,7 @@ const MobileGallery = ({ feed, placeholderImg }) => {
             ))}
         </Carousel>
         :
-        <Carousel showThumbs={false}>
+        <Carousel className='carousel' showThumbs={false}>
             <div><img className='gallery-img' src={placeholderImg} alt='placeholder'/></div>
             <div><img className='gallery-img' src={blowout} alt='placeholder'/></div>
             <div><img className='gallery-img' src={child_cut} alt='placeholder'/></div>

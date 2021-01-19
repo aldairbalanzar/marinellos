@@ -118,6 +118,9 @@ body::-webkit-scrollbar-track {
   box-shadow: 0px 5px 6px rgba(34, 34, 34, 0.7);
   z-index: 1;
 }
+.mobile-nav {
+  display: none;
+}
 .logo-container {
   width: auto;
   text-align: left;
@@ -141,6 +144,9 @@ body::-webkit-scrollbar-track {
   width: 36%;
   list-style-type: none;
   padding: 0 2% 0 0;
+}
+.mobile-links-container {
+  display: none;
 }
 .link {
   width: auto;
@@ -167,6 +173,9 @@ body::-webkit-scrollbar-track {
     height: auto;
     padding: 0;
   }
+  .mobile-nav {
+    display: flex;
+  }
   .nav-open {
     height: 100vh;
   }
@@ -182,7 +191,11 @@ body::-webkit-scrollbar-track {
     justify-content: center;
   }
   .links-container {
+    display: none;
+  }
+  .mobile-links-container {
     width: 100%;
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
@@ -364,7 +377,7 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 768px) {
   .instagram-feed {
-    width: 100%;
+    display: none;
   }
   .instagram-img {
     border-radius: 0px;
@@ -396,6 +409,9 @@ body::-webkit-scrollbar-track {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 4% 6% 6%;
+}
+.cards-container-mobile {
+  display: none;
 }
 .salon-card {
   width: 30%;
@@ -445,6 +461,13 @@ body::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 768px) {
+  .cards-container {
+    display: none;
+  }
+  .cards-container-mobile {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .contact-section {
     padding: 10% 0 0;
   }
@@ -485,7 +508,6 @@ body::-webkit-scrollbar-track {
   width: 100%;
   display: flex;
   justify-content: space-around;
-
 }
 .service-img {
   width: 22%;
@@ -501,6 +523,9 @@ body::-webkit-scrollbar-track {
   color: #fafafa;
   font-size: 1.4rem;
   padding: 3% 0 0;
+}
+.text-container-mobile {
+  display: none;
 }
 .statement {
   width: 44%;
@@ -538,6 +563,20 @@ body::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 768px) {
+  .images-container {
+    display: none;
+  }
+  .text-container {
+    display: none;
+  }
+  .text-container-mobile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fafafa;
+    font-size: 1.4rem;
+    padding: 3% 0 0;
+  }
   .services-section {
     padding: 10% 0 0;
   }
@@ -586,6 +625,9 @@ body::-webkit-scrollbar-track {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 1% 6% 0;
+}
+.carousel {
+  display: none;
 }
 .gallery-img {
   width: 22%;
@@ -709,6 +751,12 @@ body::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 768px) {
+  .image-container {
+    display: none;
+  }
+  .carousel {
+    display: flex;
+  }
   .footer-social-links {
     display: flex;
     flex-wrap: wrap;
@@ -719,4 +767,8 @@ body::-webkit-scrollbar-track {
     color: #fafafa;
     padding: 0 0 3%;
   }
+}
+
+.hidden {
+  display: none;
 }
