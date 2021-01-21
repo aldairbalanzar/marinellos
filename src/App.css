@@ -249,7 +249,7 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 768px) {
   .home {
-    padding: 16% 0 10%;
+    padding: 16% 0 12%;
   }
 }
 
@@ -461,15 +461,15 @@ body::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 768px) {
+  .contact-section {
+    padding: 4% 0 2%;
+  }
   .cards-container {
     display: none;
   }
   .cards-container-mobile {
     display: flex;
     flex-wrap: wrap;
-  }
-  .contact-section {
-    padding: 10% 0 0;
   }
   .salon-card {
     width: 100%;
@@ -563,6 +563,9 @@ body::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 768px) {
+  .services-section {
+    padding: 4% 0 2%;
+  }
   .images-container {
     display: none;
   }
@@ -576,9 +579,6 @@ body::-webkit-scrollbar-track {
     color: #fafafa;
     font-size: 1.4rem;
     padding: 3% 0 0;
-  }
-  .services-section {
-    padding: 10% 0 0;
   }
   .service-img {
     width: 100%;
@@ -675,6 +675,9 @@ body::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 768px) {
+  .gallery-section {
+    padding: 4% 0 2%;
+  }
   .gallery-title {
     margin: 0 0 8%;
   }
