@@ -5,8 +5,6 @@ import child_cut from '../assets/child_cut_1.jpg';
 import { Link } from 'react-scroll';
 
 const Home = ({ feed }) => {
-    console.log('component render')
-
     const images = [wavy_hair, blowout, child_cut];
 
     const useInterval = (callback, delay) => {
@@ -35,7 +33,7 @@ const Home = ({ feed }) => {
         } else {
             setCounter(counter + 1);
         }
-    }, 3000);
+    }, 2800);
 
     return (
         <main className='home' id='home'>
@@ -67,7 +65,7 @@ const Home = ({ feed }) => {
 
             <section className='instagram-feed'>
                 <img 
-                src={feed[0] ? feed[counter] : images[counter]}
+                src={feed[0] ? feed[counter].node.thumbnail_src : images[counter]}
                 alt='girl with blonde hair tilting her head'
                 className='instagram-img'
                 />
