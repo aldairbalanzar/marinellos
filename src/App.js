@@ -18,21 +18,23 @@ function App() {
   };
 
   const fetchInstagramJSON = () => {
-    axios.get(`https://www.instagram.com/marinellosbeautysalon/?__a=1`)
+    let id;
+
+    axios.get(process.env.REACT_APP_INSTA_URI)
     .then(res => {
-      // console.log('response: ', res)
-      
-      if(res.data.graphql) {
-        setFeed([...res.data.graphql.user.edge_owner_to_timeline_media.edges.slice(0,8)])
-      }
+      id = res.data.users[0].user.pk;
+
+      axios.get(`https://www.instagram.com/graphql/query?query_id=17888483320059182&variables={"id":"${id}","first":${8},"after":null}`)
+      .then(res => {
+        setFeed([...res.data.data.user.edge_owner_to_timeline_media.edges])
+      })
+      .catch(err => console.log('err: ', err));
     })
-    .catch(err => {
-      console.log('err: ', err)
-    })
-  }
+    .catch(err => console.log('err: ', err));
+  };
 
   useEffect(() => {
-    fetchInstagramJSON()
+    fetchInstagramJSON();
   }, []);
 
   return (
