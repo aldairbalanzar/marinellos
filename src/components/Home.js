@@ -1,8 +1,42 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import wavy_hair from '../assets/wavy_hair.jpg'
+import blowout from '../assets/blowout_hair.jpg';
+import child_cut from '../assets/child_cut_1.jpg';
 import { Link } from 'react-scroll';
 
-const Home = () => {
+const Home = ({ feed }) => {
+    console.log('component render')
+
+    const images = [wavy_hair, blowout, child_cut];
+
+    const useInterval = (callback, delay) => {
+
+        const savedCallback = useRef();
+      
+        // Remember the latest callback.
+        useEffect(() => {
+          savedCallback.current = callback;
+        }, [callback]);
+      
+        // Set up the interval.
+        useEffect(() => {
+          let id = setInterval(() => {
+            savedCallback.current();
+          }, delay);
+          return () => clearInterval(id);
+        }, [delay]);
+    };
+
+    const [counter, setCounter] = useState(0);
+
+    useInterval(() => {
+        if(counter === images.length - 1) {
+            setCounter(0)
+        } else {
+            setCounter(counter + 1);
+        }
+    }, 3000);
+
     return (
         <main className='home' id='home'>
             <header className='logo'>
@@ -33,7 +67,7 @@ const Home = () => {
 
             <section className='instagram-feed'>
                 <img 
-                src={wavy_hair}
+                src={feed[0] ? feed[counter] : images[counter]}
                 alt='girl with blonde hair tilting her head'
                 className='instagram-img'
                 />

@@ -20,7 +20,7 @@ function App() {
   const fetchInstagramJSON = () => {
     axios.get(`https://www.instagram.com/marinellosbeautysalon/?__a=1`)
     .then(res => {
-      // console.log('response: ', res.data)
+      // console.log('response: ', res)
       
       if(res.data.graphql) {
         setFeed([...res.data.graphql.user.edge_owner_to_timeline_media.edges.slice(0,8)])
@@ -42,7 +42,9 @@ function App() {
       setIsNavOpen={setIsNavOpen} 
       handleNav={handleNav}
       />
-      <Home />
+      <Home 
+      feed={feed}
+      />
       <Contact />
       <Services />
       <Gallery
