@@ -30,10 +30,18 @@ const Home = ({ feed }) => {
     const [counter, setCounter] = useState(0);
 
     useInterval(() => {
-        if(counter === images.length - 1) {
-            setCounter(0)
+        if(feed[0]) {
+            if(counter === feed.length - 1) {
+                setCounter(0)
+            } else {
+                setCounter(counter + 1);
+            }
         } else {
-            setCounter(counter + 1);
+            if(counter === images.length - 1) {
+                setCounter(0)
+            } else {
+                setCounter(counter + 1);
+            }
         }
     }, 3000);
 
@@ -67,7 +75,7 @@ const Home = ({ feed }) => {
 
             <section className='instagram-feed'>
                 <img 
-                src={feed[0] ? feed[counter] : images[counter]}
+                src={feed[0] ? feed[counter].node.thumbnail_src : images[counter]}
                 alt='girl with blonde hair tilting her head'
                 className='instagram-img'
                 />
