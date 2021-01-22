@@ -28,10 +28,18 @@ const Home = ({ feed }) => {
     const [counter, setCounter] = useState(0);
 
     useInterval(() => {
-        if(counter === images.length - 1) {
-            setCounter(0)
+        if(feed[0]) {
+            if(counter === feed.length - 1) {
+                setCounter(0)
+            } else {
+                setCounter(counter + 1);
+            }
         } else {
-            setCounter(counter + 1);
+            if(counter === images.length - 1) {
+                setCounter(0)
+            } else {
+                setCounter(counter + 1);
+            }
         }
     }, 2800);
 
