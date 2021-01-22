@@ -20,7 +20,7 @@ function App() {
   const fetchInstagramJSON = () => {
     let id;
 
-    axios.get(process.env.REACT_APP_INSTA_URI)
+    axios.get('https://www.instagram.com/web/search/topsearch/?context=blended&query=marinellosbeautysalon')
     .then(res => {
       id = res.data.users[0].user.pk;
 
