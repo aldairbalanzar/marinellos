@@ -1,7 +1,6 @@
 import React from 'react'
 
 const GalleryImg = ({ post, placeholderImg }) => {
-    console.log('post: ', post)
     return (
         <>
             <img 
