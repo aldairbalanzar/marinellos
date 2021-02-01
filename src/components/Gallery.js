@@ -6,7 +6,7 @@ import blowout from '../assets/blowout_hair.jpg';
 import child_cut from '../assets/child_cut_1.jpg';
 
 const Gallery = ({ width, feed }) => {
-    console.log('feed: ', feed)
+    // console.log('feed: ', feed)
 
     return (
         <section className='gallery-section' id='gallery'>
